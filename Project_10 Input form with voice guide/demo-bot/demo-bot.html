@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant with Js</title>
+    <link rel="stylesheet" href="/demo-bot/demobot.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/726f551968.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+
+        <div class="head">
+            <div class="mainpart1">
+                <a href="/home page/index.html"><i class="fab fa-studiovinari"> Future</i></a>
+            </div>
+            <div class="mainpart2" id="navbar">
+                <ul class="responsive">
+                    <li><a href="/home page/index.html">Home </a></li>
+                    <li><a href="/demo-bot/demo-bot.html">Demo-bot</a></li>
+                    <li><a href="/">Chat-Bot Codes</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="inputform" id="displaynone">
+        <h2>Please help me out !!</h2>
+        <form action="" class="form" id="form">
+            <label for="username">User name</label>
+            <input type="text" id="name" placeholder="-- Name Please --" name="username">
+            <label for="botname"> Name for Chatbot</label>
+            <input type="text" id="bot" placeholder="-- Suggest me a name --" name="botname">
+            <button onclick="myFunction()"><a>Submit</a></button>
+
+        </form>
+    </div>  
+<!-- form output area -->
+    <div class="container">
+        <div id="display">
+        </div>
+    </div> 
+
+<!-- Chat section -->
+    <div class="chatsection">
+        <div class="box">
+            <div id="output">
+             <!-- <div class="chat-container">
+               <p class="voice2text">Hi there</p>
+             </div>  
+             <div class="chat-container darker">                               this is to make ease CSS 
+               <p class="voice2text">hello back</p>
+             </div>
+               -->
+            </div>
+       </div>
+       <div class="voice">
+        <div class="button">
+            <a><i class="fas fa-microphone-alt"></i></a>
+           </div>
+       </div>
+    </div>
+
+    <div class="footer_tail">
+        <div class="part1">
+            <a href="/home page/index.html"><i class="fab fa-studiovinari"> Future</i></a>
+        </div>
+        <div class="part2">
+            <p>Future Tech. group | 2021 | -Royson Lewis</p>
+        </div>
+        <div class="part3">
+            
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-youtube"></i>
+            
+        </div>
+    </div>
+
+
+    <script src="/demo-bot/demobot.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+body {
+  background: black;
+  padding: 0px 50px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.head .mainpart1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 34px;
+}
+
+.head .mainpart2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.head .mainpart2 ul {
+  display: flex;
+  list-style: none;
+}
+
+.mainpart2 ul li a {
+  color: rgb(232, 248, 234);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  font-size: 24px;
+}
+
+.head .mainpart2 ul li a:hover {
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: all 0.9s;
+  outline: none;
+}
+.inputform {
+  width: 40%;
+  margin: 5rem auto;
+  padding: 20px 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 7px 7px 20px rgb(87, 58, 255);
+  border-radius: 30px;
+}
+.inputform h2 {
+  color: white;
+  font-size: 28px;
+}
+.form {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.form label {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.form input {
+  padding: 12px 15px;
+  border-radius: 15px;
+  outline: none;
+  box-shadow: none;
+  margin: 0px auto 20px auto;
+  width: 90%;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 2px 2px 10px rgb(87, 58, 255);
+}
+.form button {
+  margin: auto;
+  width: 40%;
+  font-size: 1rem;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  padding: 14px 32px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  outline: none;
+}
+.form button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #4837ff;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+.form button a {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.form button:hover:after {
+  width: 100%;
+}
+
+/* Display */
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container #display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  max-height: 60px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgb(87, 58, 255); 
+   overflow-y: hidden;
+}
+.container #display p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+}
+/* chat section stars */
+.chatsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  height: 80vh;
+  margin: auto;
+  border-radius: 30px;
+  padding: 40px 50px;
+}
+.box {
+  width: 70%;
+  box-shadow: 5px 7px 50px rgb(255, 81, 81);
+  height: 80%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.box #output {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 90%;
+  padding: 0px 40px;
+  overflow-y: scroll;
+}
+
+div.chat-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+}
+
+div.chat-container p {
+  padding: 10px 25px;
+  background-color: rgb(225, 253, 214);
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  box-shadow: 2px 2px 10px rgb(144, 247, 195);
+}
+.chat-container.darker {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.chat-container.darker p {
+  padding: 10px 25px;
+  background-color: rgb(255, 193, 193);
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  box-shadow: 3px 3px 20px rgb(248, 136, 136);
+}
+
+.button {
+  margin: auto;
+  width: 20px;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  padding: 14px 30px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  outline: none;
+}
+.button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #4837ff;
+  transition: all 0.3s;
+  border-radius: 15px;
+}
+.button a {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.button:hover:after {
+  width: 100%;
+}
+/* footer */
+
+.footer_tail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 70%;
+  margin: 3rem auto 0rem auto;
+}
+.footer_tail .part1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 26px;
+}
+.footer_tail .part2 p {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.footer_tail .part3 {
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+}
+.footer_tail .part3 i {
+  padding-right: 10px;
+}
